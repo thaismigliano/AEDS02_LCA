@@ -22,12 +22,12 @@ void CriaFuncionarioId(Funcionario* funcionario) {
 void CriaFuncionario(int idx, Funcionario* funcionario) {
   printf("Digite o nome:\n");
   scanf("%s", funcionario->nome);
-  
+
   printf("Digite o cargo:\n");
   scanf("%d", &funcionario->cargo);
-  
+
   CriaFuncionarioId(funcionario);
-  
+
   printf("=====================================================\n");
   printf("O id de %s e': %d\n", funcionario->nome, funcionario->id);
   printf("=====================================================\n");
@@ -35,6 +35,7 @@ void CriaFuncionario(int idx, Funcionario* funcionario) {
 }
 
 void ImprimeFuncionario(Funcionario* funcionario) {
+  
   printf("==============================\n");
   printf("Nome: %s\n", funcionario->nome);
   printf("Cargo: %d\n", funcionario->cargo);
