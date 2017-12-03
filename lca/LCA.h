@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-// Indica quais são os cargos na empresa.
+// Indica quais sï¿½o os cargos na empresa.
 enum cargos {
   PRESIDENTE = 1,
   DIRETOR = 2,
@@ -12,20 +12,20 @@ enum cargos {
 };
 
 typedef struct {
-  // Id do funcionário criado automaticamente a partir de um hash
+  // Id do funcionï¿½rio criado automaticamente a partir de um hash
   // do nome e cargo.
   int id;
-  // Nome do funcionário.
+  // Nome do funcionï¿½rio.
   char nome[100];
-  // Qual é o cargo do superior.
+  // Qual ï¿½ o cargo do superior.
   enum cargos cargo;
-  // Indica qual é o id do superior.
+  // Indica qual ï¿½ o id do superior.
   int id_superior;
 } Funcionario;
 
-// Indica quantos funcionários tem na empresa.
+// Indica quantos funcionï¿½rios tem na empresa.
 int n;
-// Indica quais são os ids disponíveis.
+// Indica quais sï¿½o os ids disponï¿½veis.
 int* ids_disponiveis;
 // Mapeia o id para o indice no vetor de funcionarios.
 int* map_id_to_idx;
@@ -33,6 +33,6 @@ int* map_id_to_idx;
 int* superior;
 
 void CriaFuncionario(int idx, Funcionario* funcionario);
-void ImprimeFuncionario(Funcionario* funcionario);
+void ImprimeFuncionario(Funcionario funcionario);
 // Dado o indice de dois funcionarios, calcula o LCA deles.
 int LCA(int id_a, int id_b);

@@ -34,11 +34,11 @@ void CriaFuncionario(int idx, Funcionario* funcionario) {
   map_id_to_idx[funcionario->id] = idx;
 }
 
-void ImprimeFuncionario(Funcionario* funcionario) {
-  
+void ImprimeFuncionario(Funcionario funcionario) {
+
   printf("==============================\n");
-  printf("Nome: %s\n", funcionario->nome);
-  printf("Cargo: %d\n", funcionario->cargo);
+  printf("Nome: %s\n", funcionario.nome);
+  printf("Cargo: %d\n", funcionario.cargo);
   printf("==============================\n");
 }
 
