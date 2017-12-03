@@ -35,6 +35,7 @@ int main() {
   printf("Digite quantas consultas deseja fazer:\n");
   scanf("%d", &num_consultas);
   for (i = 0; i < num_consultas; i++) {
+    printf("\nDigite o id dos dois funcionarios:");
     scanf("%d %d", &id_a, &id_b);
     id_lca = LCA(id_a, id_b);
     if (id_lca == -1) {
