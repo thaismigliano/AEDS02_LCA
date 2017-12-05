@@ -2,6 +2,15 @@
 #include <string.h>
 #include <stdlib.h>
 
+// Valor usado para indicar o superior de um funcionario.
+#define NINGUEM -1
+
+#define OCUPADO 0
+#define DISPONIVEL 1
+
+#define NAO_ESTA_NO_CAMINHO 0
+#define ESTA_NO_CAMINHO 1
+
 // Indica quais s�o os cargos na empresa.
 enum cargos {
   PRESIDENTE = 1,
@@ -25,11 +34,12 @@ typedef struct {
 
 // Indica quantos funcion�rios tem na empresa.
 int n;
-// Indica quais s�o os ids dispon�veis.
+// Indica quais sao os ids dispon�veis. Inicialmente, todos os valores
+// sao 1.
 int* ids_disponiveis;
 // Mapeia o id para o indice no vetor de funcionarios.
 int* map_id_to_idx;
-// Vetor indicando quem e' o superior de cada um.
+// Vetor indicando quem e' o superior de cada funcionario.
 int* superior;
 
 void CriaFuncionario(int idx, Funcionario* funcionario);
