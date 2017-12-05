@@ -1,14 +1,24 @@
 10
-Michele 1
-Mayla 2
-Thais 2
-Joao 3
-Liv 3
-Davi 4
-Danilo 4
-Lucas 3
-Flavia 5
-Aline 5
+Michele
+1
+Mayla
+2
+Thais
+2
+Joao
+3
+Liv
+3
+Davi
+4
+Danilo
+4
+Lucas
+3
+Flavia
+5
+Aline
+5
 2 6
 7 6
 8 2
