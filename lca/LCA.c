@@ -24,7 +24,7 @@ void CriaFuncionario(int idx, Funcionario* funcionario) {
   scanf("%s", funcionario->nome);
 
   printf("Digite o cargo:\n");
-  scanf("%d", &funcionario->cargo);
+  scanf("%u", &funcionario->cargo);
 
   CriaFuncionarioId(funcionario);
 
